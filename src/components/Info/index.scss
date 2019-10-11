@@ -1,0 +1,35 @@
+/*===================================
+=            Info Styles            =
+===================================*/
+
+@import '../../assets/styles/constants/layout';
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.info {
+	font-size: em(14);
+	line-height: 1;
+	&__item {
+		display: flex;
+		& + & {
+			margin-top: em(23, 14);
+		}
+	}
+	&__title {
+		flex-shrink: 0;
+		width: em(130, 14);
+		padding-right: em(28, 14);
+		color: get-color('gray-dark');
+		text-align: right;
+		font-weight: $semi-bold-font-weight;
+		text-transform: capitalize;
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: inherit;
+		}
+	}
+	&__content {
+		color: get-color('gray');
+	}
+}

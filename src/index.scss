@@ -1,0 +1,14 @@
+/*==============================
+=            Styles            =
+==============================*/
+
+@import 'assets/styles/helpers/colors';
+@import 'assets/styles/helpers/spacing';
+
+@import '../node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+@import 'assets/styles/base/defaults';
+@import 'assets/styles/base/classes';
+@import 'assets/styles/base/animations';
+
+@include generate-color-classes();
+@include generate-gutter-classes();

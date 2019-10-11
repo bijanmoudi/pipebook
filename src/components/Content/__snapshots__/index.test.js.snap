@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Content" component Rendering a rich page 1`] = `
+<div
+  className="content"
+  onScroll={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+>
+  <div>
+    <div />
+    <div
+      className="content__header"
+      style={Object {}}
+    >
+      <div
+        className="wrapper"
+      >
+        <div
+          className="content-header__inner"
+        >
+          <div
+            className="content-header__column content-header__column--title"
+          >
+            <h1>
+              Sample Page
+            </h1>
+            <a
+              href="#"
+            >
+              ?
+            </a>
+          </div>
+          <div
+            className="content-header__column content-header__column--search"
+          >
+            <input
+              name="search"
+              placeholder="Search ..."
+              type="search"
+            />
+          </div>
+          <div
+            className="content-header__column content-header__column--navigation"
+          >
+            <ol>
+              <li>
+                <a
+                  href="#1"
+                >
+                  Page1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#2"
+                >
+                  Page2
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main
+    className="content__body"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="content-body__inner"
+      >
+        <p>
+          Page content goes here ...
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Testing "Content" component Rendering a simple page 1`] = `
+<div
+  className="content"
+  onScroll={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+>
+  <div>
+    <div />
+    <div
+      className="content__header"
+      style={Object {}}
+    >
+      <div
+        className="wrapper"
+      >
+        <div
+          className="content-header__inner"
+        >
+          <div
+            className="content-header__column content-header__column--title"
+          >
+            <h1>
+              Sample Page
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main
+    className="content__body"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="content-body__inner"
+      >
+        <p>
+          Page content goes here ...
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+`;

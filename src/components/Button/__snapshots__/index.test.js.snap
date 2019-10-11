@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Button" component Rendering creating element 1`] = `
+<button
+  className="button button--green"
+  onClick={[Function]}
+>
+  Click Me!
+</button>
+`;
+
+exports[`Testing "Button" component Rendering wrapping elements 1`] = `
+<button
+  className="button button--small"
+  onClick={[Function]}
+>
+  Click Me!
+</button>
+`;

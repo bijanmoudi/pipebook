@@ -1,0 +1,12 @@
+/*=====================================
+=            Footer Styles            =
+=====================================*/
+
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.footer {
+	padding: rem(28) 0;
+	background-color: get-color('gray-light-very');
+	box-shadow: 0 rem(-1) rem(3) get-color('gray-light', 0.45);
+}

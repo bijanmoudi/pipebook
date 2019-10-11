@@ -1,0 +1,72 @@
+/*======================================================
+=            Layout Styles & Common classes            =
+======================================================*/
+
+@import '../constants/layout';
+@import '../helpers/colors';
+@import '../helpers/units';
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.noselect {
+	user-select: none;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.semibold {
+	font-weight: $semi-bold-font-weight;
+}
+
+.h1 {
+	font-size: em($h1-font-size);
+}
+
+.h2 {
+	font-size: em($h2-font-size);
+}
+
+.h3 {
+	font-size: em($h3-font-size);
+}
+
+.h4 {
+	font-size: em($h3-font-size);
+}
+
+.h5 {
+	font-size: em($h4-font-size);
+}
+
+.h6 {
+	font-size: em($h5-font-size);
+}
+
+.highlighted {
+	background-color: get-color('orange', 0.64);
+}
+
+.has-moving-children {
+	pointer-events: none;
+	.is--moving {
+		opacity: 0;
+	}
+}
+
+.is--grabbing {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}

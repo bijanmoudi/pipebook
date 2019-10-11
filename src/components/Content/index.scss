@@ -1,0 +1,89 @@
+/*==============================================
+=            Content Section Styles            =
+==============================================*/
+
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+@import '../../../node_modules/sass-mq/mq';
+
+.content {
+	flex-grow: 1;
+	&--is-loading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+	}
+	&__header {
+		z-index: 1;
+		position: relative;
+		background-color: get-color('white', 0.975);
+		box-shadow: 0 rem(1) rem(3) get-color('gray-light', 0.35);
+		&--is-sticked {
+			.content-header__inner {
+				padding: rem(5) 0;
+			}
+		}
+	}
+	&__body {
+		z-index: 0;
+		position: relative;
+	}
+	&-header {
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 rem(-5);
+			padding: rem(18) 0;
+			transition: padding 150ms ease;
+		}
+		&__column {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: rem(5) rem(5);
+			&--search {
+				& > * {
+					@include mq($until: sm) {
+						width: 100%;
+					}
+				}
+				.input {
+					&__element {
+						width: rem(400);
+						max-width: 100%;
+						padding-right: em(40);
+						@include mq($until: sm) {
+							width: 100%;
+						}
+					}
+				}
+			}
+			&:last-child {
+				justify-content: flex-end;
+			}
+			&:first-child {
+				justify-content: flex-start;
+			}
+			& > * {
+				& + * {
+					margin-left: rem(10);
+				}
+			}
+			&--search {
+				@include mq($until: sm) {
+					flex-grow: 1;
+					width: 100%;
+				}
+			}
+		}
+	}
+	&-body {
+		&__inner {
+			padding-top: rem(21);
+			padding-bottom: rem(68);
+		}
+	}
+}

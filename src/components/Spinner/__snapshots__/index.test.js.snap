@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Spinner" component Rendering a big silent spinner with default text 1`] = `
+<div
+  className="spinner"
+  style={
+    Object {
+      "fontSize": 50,
+    }
+  }
+>
+  <span
+    aria-busy="true"
+    className="visuallyhidden"
+  >
+    Loading ...
+  </span>
+</div>
+`;
+
+exports[`Testing "Spinner" component Rendering a loading spinner without text 1`] = `
+<div
+  className="spinner"
+  style={Object {}}
+>
+  <span
+    aria-busy="true"
+    className="visuallyhidden"
+    role="alert"
+  >
+    
+  </span>
+</div>
+`;
