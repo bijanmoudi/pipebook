@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Prompt" component Rendering failed Prompt 1`] = `
+<div
+  className="prompt prompt--error"
+  role="alert"
+>
+  <div
+    className="prompt__inner"
+    onClick={[Function]}
+  >
+    <span
+      className="prompt__text"
+    >
+      An error occured
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing "Prompt" component Rendering loading Prompt without text 1`] = `
+<div
+  className="prompt"
+  role="alert"
+>
+  <div
+    className="prompt__inner"
+    onClick={[Function]}
+  >
+    <div
+      className="spinner prompt__spinner"
+      style={Object {}}
+    >
+      <span
+        aria-busy="true"
+        className="visuallyhidden"
+      />
+    </div>
+    <span
+      className="prompt__text"
+    />
+  </div>
+</div>
+`;

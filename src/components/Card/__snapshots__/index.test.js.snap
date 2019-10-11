@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Card" component Rendering as a draggable "div" 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card__inner"
+  >
+    <div
+      className="card__column card__column--image"
+    >
+      <figure
+        className="avatar avatar--is-loading card__avatar"
+      >
+        <a
+          className="avatar__wrapper"
+          href="https://www.google.com/search?q=Dulce+Mays"
+          tabIndex="-1"
+          title="Dulce Mays"
+        >
+          <abbr
+            className="avatar__abbreviation"
+          >
+            DM
+          </abbr>
+          <div
+            aria-label="Dulce Mays's Avatar"
+            className="avatar__image"
+            role="img"
+            style={
+              Object {
+                "backgroundImage": "url(null)",
+              }
+            }
+          />
+        </a>
+      </figure>
+    </div>
+    <div
+      className="card__column card__column--info"
+    >
+      <div
+        className="card__header"
+      >
+        <h3
+          className="card__title"
+        >
+          <a
+            href="https://www.google.com/search?q=Dulce+Mays"
+          >
+            Dulce Mays
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card__handle"
+  />
+</div>
+`;
+
+exports[`Testing "Card" component Rendering the default 1`] = `
+<li
+  className="card"
+>
+  <div
+    className="card__inner"
+  >
+    <div
+      className="card__column card__column--image"
+    >
+      <figure
+        className="avatar avatar--is-loading card__avatar"
+      >
+        <a
+          className="avatar__wrapper"
+          href="https://www.google.com/search?q=Dulce+Mays"
+          tabIndex="-1"
+          title="Dulce Mays"
+        >
+          <abbr
+            className="avatar__abbreviation"
+          >
+            DM
+          </abbr>
+          <div
+            aria-label="Dulce Mays's Avatar"
+            className="avatar__image"
+            role="img"
+            style={
+              Object {
+                "backgroundImage": "url(null)",
+              }
+            }
+          />
+        </a>
+      </figure>
+    </div>
+    <div
+      className="card__column card__column--info"
+    >
+      <div
+        className="card__header"
+      >
+        <h3
+          className="card__title"
+        >
+          <a
+            href="https://www.google.com/search?q=Dulce+Mays"
+          >
+            Dulce Mays
+          </a>
+        </h3>
+        <div
+          className="card__header-extra"
+        >
+          <a
+            className="button"
+            href="#help"
+          >
+            ?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`Testing "Card" component Rendering with highlighted text 1`] = `
+<li
+  className="card"
+>
+  <div
+    className="card__inner"
+  >
+    <div
+      className="card__column card__column--image"
+    >
+      <figure
+        className="avatar avatar--is-loading card__avatar"
+      >
+        <a
+          className="avatar__wrapper"
+          href="https://www.google.com/search?q=Dulce+Mays"
+          tabIndex="-1"
+          title="Dulce Mays"
+        >
+          <abbr
+            className="avatar__abbreviation"
+          >
+            DM
+          </abbr>
+          <div
+            aria-label="Dulce Mays's Avatar"
+            className="avatar__image"
+            role="img"
+            style={
+              Object {
+                "backgroundImage": "url(null)",
+              }
+            }
+          />
+        </a>
+      </figure>
+    </div>
+    <div
+      className="card__column card__column--info"
+    >
+      <div
+        className="card__header"
+      >
+        <h3
+          className="card__title"
+        >
+          <a
+            href="https://www.google.com/search?q=Dulce+Mays"
+          >
+            
+            <span
+              className="highlighted"
+            >
+              Dul
+            </span>
+            ce Mays
+          </a>
+        </h3>
+      </div>
+      <ul
+        className="card__meta"
+      >
+        <li
+          className="card__meta-item card__meta-item--organization"
+        >
+          <span>
+            Rockford Linear Actuation
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</li>
+`;

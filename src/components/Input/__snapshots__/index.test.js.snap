@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Input" component Rendering with default value and without reset button 1`] = `
+<div
+  className="input"
+>
+  <input
+    autoCapitalize="off"
+    autoComplete="off"
+    autoCorrect="off"
+    className="input__element"
+    onChange={[Function]}
+    spellCheck="false"
+    value="Dulce"
+  />
+</div>
+`;
+
+exports[`Testing "Input" component Rendering without default value but with custom container class 1`] = `
+<div
+  className="input search__input"
+>
+  <input
+    autoCapitalize="off"
+    autoComplete="off"
+    autoCorrect="off"
+    className="input__element"
+    onChange={[Function]}
+    spellCheck="false"
+    value=""
+  />
+</div>
+`;

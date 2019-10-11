@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Modal" component Rendering closed modal 1`] = `null`;
+
+exports[`Testing "Modal" component Rendering loading modal 1`] = `
+<div
+  aria-labelledby="new-person-modal__label"
+  aria-modal="true"
+  className="modal modal--is-loading"
+  id="new-person-modal"
+  onClick={[Function]}
+  role="dialog"
+>
+  <div
+    className="modal__inner"
+  >
+    <header
+      className="modal__header"
+    >
+      <h2
+        className="modal__title"
+      />
+      <button
+        className="modal__close"
+        onClick={[Function]}
+        title="Close this modal"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Close
+        </span>
+      </button>
+    </header>
+    <footer
+      className="modal__footer"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+        title="Back to the list"
+      >
+        Back
+        <span
+          className="visuallyhidden"
+        >
+           
+          to the list
+        </span>
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Testing "Modal" component Rendering with all props provided 1`] = `
+<div
+  aria-labelledby="new-person-modal__label"
+  aria-modal="true"
+  className="modal modal--is-loading"
+  id="new-person-modal"
+  onClick={[Function]}
+  role="dialog"
+>
+  <span
+    aria-live="polite"
+    className="visuallyhidden"
+    id="new-person-modal__label"
+  >
+    Add new person
+  </span>
+  <div
+    className="modal__inner"
+  >
+    <header
+      className="modal__header"
+    >
+      <h2
+        className="modal__title"
+      >
+        Add new person
+      </h2>
+      <button
+        className="modal__close"
+        onClick={[Function]}
+        title="Close this modal"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Close
+        </span>
+      </button>
+    </header>
+    <section
+      className="modal__content"
+      role="main"
+    >
+      <input
+        type="text"
+      />
+    </section>
+    <footer
+      className="modal__footer"
+    >
+      <p>
+        <span
+          class="color-red"
+        >
+          (*)
+        </span>
+         Required fields
+      </p>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Testing "Modal" component Rendering with customized footer and no title 1`] = `
+<div
+  aria-labelledby="new-person-modal__label"
+  aria-modal="true"
+  className="modal"
+  id="new-person-modal"
+  onClick={[Function]}
+  role="dialog"
+>
+  <div
+    className="modal__inner"
+  >
+    <header
+      className="modal__header"
+    >
+      <h2
+        className="modal__title"
+      />
+      <button
+        className="modal__close"
+        onClick={[Function]}
+        title="Close this modal"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Close
+        </span>
+      </button>
+    </header>
+    <section
+      className="modal__content"
+      role="main"
+    >
+      <input
+        type="text"
+      />
+    </section>
+    <footer
+      className="modal__footer"
+    >
+      <p>
+        <span
+          class="color-red"
+        >
+          (*)
+        </span>
+         Required fields
+      </p>
+      <button
+        className="button"
+        onClick={[Function]}
+        title="Close this modal"
+      >
+        Close
+      </button>
+    </footer>
+  </div>
+</div>
+`;

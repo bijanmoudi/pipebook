@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Avatar" component Rendering with image, name, and link 1`] = `
+<figure
+  className="avatar avatar--is-loading"
+>
+  <a
+    className="avatar__wrapper"
+    href="https://www.google.com/search?q=Dulce+Mays"
+    tabIndex="-1"
+    title="Dulce Mays"
+  >
+    <abbr
+      className="avatar__abbreviation"
+    >
+      DM
+    </abbr>
+    <div
+      aria-label="Dulce Mays's Avatar"
+      className="avatar__image"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(null)",
+        }
+      }
+    />
+  </a>
+</figure>
+`;
+
+exports[`Testing "Avatar" component Rendering without image 1`] = `
+<figure
+  className="avatar"
+>
+  <div
+    className="avatar__wrapper"
+    title="Dulce Mays"
+  >
+    <abbr
+      className="avatar__abbreviation"
+    >
+      DM
+    </abbr>
+  </div>
+</figure>
+`;
+
+exports[`Testing "Avatar" component Rendering without name 1`] = `
+<figure
+  className="avatar avatar--is-loading"
+>
+  <div
+    className="avatar__wrapper"
+    title={null}
+  >
+    <div
+      aria-label="null's Avatar"
+      className="avatar__image"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(null)",
+        }
+      }
+    />
+  </div>
+</figure>
+`;

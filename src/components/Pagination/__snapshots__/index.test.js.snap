@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Pagination" component Rendering default pagination 1`] = `
+<nav
+  aria-label="Pagination"
+>
+  <ol
+    className="pagination"
+  >
+    <li
+      className="pagination__item pagination__item--previous-group"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+        title="Previous set of pages"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Previous set of pages
+        </span>
+      </a>
+    </li>
+    <li
+      className="pagination__item pagination__item--previous-page"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+        title="Previous page"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Previous page
+        </span>
+      </a>
+    </li>
+    <li
+      className="pagination__item pagination__item--is-active"
+    >
+      <a
+        aria-current="page"
+        className="pagination__link"
+        href="/page/1"
+        onClick={[Function]}
+        tabIndex="-1"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          page #
+        </span>
+        1
+      </a>
+    </li>
+    <li
+      className="pagination__item"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          page #
+        </span>
+        2
+      </a>
+    </li>
+    <li
+      className="pagination__item"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          page #
+        </span>
+        3
+      </a>
+    </li>
+    <li
+      className="pagination__item pagination__item--next-page"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+        title="Next page"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Next page
+        </span>
+      </a>
+    </li>
+    <li
+      className="pagination__item pagination__item--next-group"
+    >
+      <a
+        aria-disabled={true}
+        className="pagination__link pagination__link--is-disabled"
+        href="/"
+        onClick={[Function]}
+        tabIndex="-1"
+        title="Next set of pages"
+      >
+        <span
+          className="visuallyhidden"
+        >
+          Next set of pages
+        </span>
+      </a>
+    </li>
+  </ol>
+</nav>
+`;

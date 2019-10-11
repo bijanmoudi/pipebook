@@ -1,0 +1,14 @@
+/*===================================
+=            Logo Styles            =
+===================================*/
+
+@import '../../assets/styles/constants/layout';
+
+.logo {
+	&,
+	&__image {
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: $bold-font-weight;
+	}
+}

@@ -1,0 +1,180 @@
+/*===================================
+=            Card Styles            =
+===================================*/
+
+@import '../../assets/styles/constants/layout';
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+@import '../../../node_modules/sass-mq/mq';
+
+.card {
+	position: relative;
+	border-radius: rem($border-radius);
+	border: 1px solid get-color('gray-light-very');
+	list-style: none;
+	box-shadow: 0 0 rem(3) get-color('gray-light', 0.45);
+	background-color: get-color('white', 0.9);
+	animation: fadeIn 500ms;
+	&:hover {
+		box-shadow: 0 0 rem(3) get-color('gray-dark-extra', 1);
+		.card {
+			&__header-extra {
+				opacity: 1;
+				visibility: visible;
+				transform: scale(1);
+			}
+		}
+	}
+	&:not(:hover) {
+		.card {
+			&__header-extra {
+				@media (hover: hover) and (pointer: fine) {
+					border: 0;
+					clip: rect(0 0 0 0);
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					padding: 0;
+					position: absolute;
+					white-space: nowrap;
+					width: 1px;
+				}
+			}
+		}
+	}
+	&.is--draggable {
+		user-select: none;
+		.card__handle {
+			cursor: move;
+			cursor: grab;
+			cursor: -moz-grab;
+			cursor: -webkit-grab;
+			&:active {
+				cursor: grabbing;
+				cursor: -moz-grabbing;
+				cursor: -webkit-grabbing;
+			}
+		}
+	}
+	& + & {
+		margin-top: em(10);
+	}
+	&__handle {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		margin: 0 em(-5);
+		padding: em(14) em(30);
+		@include mq($until: sm) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	&__column {
+		padding: em(4) em(5);
+		&--info {
+			flex-grow: 1;
+		}
+	}
+	&__header {
+		min-height: em(22);
+		& > * {
+			z-index: 1;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: em(10);
+			@include mq($until: sm) {
+				display: inline;
+				margin-right: 0;
+			}
+		}
+		& + * {
+			margin-top: em(3);
+		}
+	}
+	&__title {
+		color: get-color('gray-dark-very');
+		& > * {
+			display: block;
+			@include mq($from: sm) {
+				max-width: em(420);
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			@include mq($until: sm) {
+				display: inline;
+			}
+		}
+		a {
+			color: inherit;
+			text-decoration: none;
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: underline;
+			}
+			&:active {
+				transform: scale(1);
+				opacity: 0.8;
+			}
+		}
+	}
+	&__header-extra {
+		line-height: 1;
+		@media (hover: hover) and (pointer: fine) {
+			visibility: hidden;
+			opacity: 0;
+			transform: scale(0);
+			transition: opacity 250ms ease, visibility 250ms ease,
+				transform 250ms ease;
+		}
+		@include mq($until: sm) {
+			position: absolute;
+			top: em(10);
+			left: em(10);
+		}
+	}
+	&__meta {
+		color: get-color('gray');
+		line-height: 1;
+		&-item {
+			z-index: 1;
+			position: relative;
+			display: inline-flex;
+			margin-right: em(12);
+			text-align: left;
+			font-size: em(14);
+			@include mq($until: sm) {
+				margin: 0 em(6);
+			}
+			&--organization {
+				&:before {
+					content: '';
+					flex-shrink: 0;
+					width: em(15);
+					height: em(15);
+					margin-right: em(6, 14);
+					background: url('../../assets/images/icons/office.svg') center center
+						no-repeat;
+				}
+			}
+		}
+	}
+	&__avatar {
+		z-index: 1;
+		position: relative;
+		@include mq($until: sm) {
+			font-size: em(29);
+		}
+	}
+}

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing "Info" component Rendering with items contaning no null value 1`] = `
+<ul
+  className="info"
+>
+  <li
+    className="info__item"
+  >
+    <span
+      className="info__title"
+    >
+      <strong>
+        organization
+      </strong>
+      <span
+        className="visuallyhidden"
+      >
+        :
+      </span>
+    </span>
+    <span
+      className="info__content"
+    >
+      Rockford Linear Actuation
+    </span>
+  </li>
+  <li
+    className="info__item"
+  >
+    <span
+      className="info__title"
+    >
+      <strong>
+        groups
+      </strong>
+      <span
+        className="visuallyhidden"
+      >
+        :
+      </span>
+    </span>
+    <span
+      className="info__content"
+    >
+      Mike’s contacts
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Testing "Info" component Rendering with items contaning null values 1`] = `
+<ul
+  className="info"
+>
+  <li
+    className="info__item"
+  >
+    <span
+      className="info__title"
+    >
+      <strong>
+        groups
+      </strong>
+      <span
+        className="visuallyhidden"
+      >
+        :
+      </span>
+    </span>
+    <span
+      className="info__content"
+    >
+      Mike’s contacts
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Testing "Info" component Rendering without items 1`] = `null`;

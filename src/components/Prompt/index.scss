@@ -1,0 +1,61 @@
+/*=====================================
+=            Prompt Styles            =
+=====================================*/
+
+@import '../../assets/styles/constants/layout';
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.prompt {
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -1px;
+	transform: translateY(100%);
+	transition: transform 250ms ease 500ms;
+	user-select: none;
+	pointer-events: none;
+	&--is-visible {
+		transform: translateY(0);
+		transition-delay: 0s;
+	}
+	&--error,
+	&--success {
+		transition-delay: 0s;
+		cursor: pointer;
+	}
+	&--error {
+		.prompt__inner {
+			background-color: get-color('red');
+		}
+	}
+	&--success {
+		background-color: get-color('red');
+	}
+	&__inner {
+		max-width: 95%;
+		min-height: rem(45);
+		padding: rem(10) rem(25);
+		border-top-right-radius: rem($border-radius);
+		border-top-left-radius: rem($border-radius);
+		background-color: get-color('gray-dark-extra');
+		color: get-color('white');
+		transition: background-color 250ms ease;
+		pointer-events: auto;
+	}
+	&__spinner {
+		& + * {
+			margin-left: rem(10);
+		}
+	}
+	&__text {
+		font-size: rem(14);
+		font-weight: 600;
+		text-align: left;
+	}
+}
