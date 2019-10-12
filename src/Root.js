@@ -12,7 +12,7 @@ import './index.scss';
 const Root = ({ store }) => {
 	return (
 		<Provider store={store}>
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Switch>
 					<Redirect exact from="/" to="/list/" />
 					<Route path="/list/" component={ListPage} />
