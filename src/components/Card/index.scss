@@ -66,6 +66,23 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
+		@media (hover: none) and (pointer: coarse) {
+			top: em(10);
+			bottom: auto;
+			right: em(10);
+			left: auto;
+			&:before {
+				content: '🡙';
+				border: rem(2) solid;
+				width: em(25);
+				height: em(25);
+				display: block;
+				text-align: center;
+				border-radius: rem($border-radius);
+				line-height: em(23);
+				color: get-color('gray-dark');
+			}
+		}
 	}
 	&__inner {
 		display: flex;
