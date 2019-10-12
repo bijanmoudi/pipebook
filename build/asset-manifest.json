@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pipebook/static/css/main.ebd33269.chunk.css",
-    "main.js": "/pipebook/static/js/main.a86b18af.chunk.js",
-    "main.js.map": "/pipebook/static/js/main.a86b18af.chunk.js.map",
+    "main.css": "/pipebook/static/css/main.53ba6d75.chunk.css",
+    "main.js": "/pipebook/static/js/main.6a83cc9f.chunk.js",
+    "main.js.map": "/pipebook/static/js/main.6a83cc9f.chunk.js.map",
     "runtime~main.js": "/pipebook/static/js/runtime~main.a1525d1d.js",
     "runtime~main.js.map": "/pipebook/static/js/runtime~main.a1525d1d.js.map",
     "static/js/2.52c6d453.chunk.js": "/pipebook/static/js/2.52c6d453.chunk.js",
     "static/js/2.52c6d453.chunk.js.map": "/pipebook/static/js/2.52c6d453.chunk.js.map",
     "index.html": "/pipebook/index.html",
-    "precache-manifest.d2a69f32184b038c6594c2354422381d.js": "/pipebook/precache-manifest.d2a69f32184b038c6594c2354422381d.js",
+    "precache-manifest.b371ddb15c65384230087c90f53369b2.js": "/pipebook/precache-manifest.b371ddb15c65384230087c90f53369b2.js",
     "service-worker.js": "/pipebook/service-worker.js",
-    "static/css/main.ebd33269.chunk.css.map": "/pipebook/static/css/main.ebd33269.chunk.css.map",
-    "static/media/index.scss": "/pipebook/static/media/office.1c40e5d9.svg"
+    "static/css/main.53ba6d75.chunk.css.map": "/pipebook/static/css/main.53ba6d75.chunk.css.map",
+    "static/media/index.scss": "/pipebook/static/media/office.81a47f35.svg"
   }
 }
