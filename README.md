@@ -48,6 +48,7 @@ A working demo can be found [here](https://bijanmoudi.github.io/pipebook).
 15. Writing visual regression tests
 16. Support server-side rendering
 17. Improving prioritization algorithm
+18. Defining a model instead of installing lots of if/else conditions right inside the `ListPage` component
 
 ## Confession
 
