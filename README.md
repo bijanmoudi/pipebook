@@ -12,7 +12,7 @@ A working demo can be found [here](https://bijanmoudi.github.io/pipebook).
 - Supporting common keyboard shortcuts (like `Escape` for closing a modal and `Enter` for submitting a form)
 - Following almost all the best practices of accessibility
 - Preventing extra requests wherever possible (like person information modal in `People's List` page)
-- Pixel-perfect and UX-aware UI development
+- Pixel-perfect, responsive, and UX-aware UI development
 - Implementing all bonus challenges (like pagination, search, ordering, creating a new user, and deleting a user)
 
 ## How to
@@ -68,5 +68,5 @@ A working demo can be found [here](https://bijanmoudi.github.io/pipebook).
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) for handling Snapshot(regression) tests
 - [classnames](https://github.com/JedWatson/classnames) for handling conditional classes more elegantly
 - [node-sass](https://github.com/sass/node-sass) and [sass-mq](https://github.com/sass-mq/sass-mq) for making the styling as easy as a breath
-- [spa-github-pages](https://github.com/rafrex/spa-github-pages) for enabling the application to work from GitHub pages
+- [spa-github-pages](https://github.com/rafrex/spa-github-pages) for enabling hard reloading of the application from GitHub pages
 - Avatar images of unknown people (I hope they don't get sad because of using their photos without permission)
