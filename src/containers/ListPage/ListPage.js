@@ -215,15 +215,17 @@ const List = () => {
 				but this is not true about search endpoint. So it is better to
 				check for the presence of details, before starting a new call.
 			*/
-			const currentItem = pageItems.filter(
-				item => parseInt(item.id) === parseInt(hash.id)
-			);
-			if (
+			const currentItem =
+				pageItems &&
 				pageItems.length &&
-				(!currentItem.length ||
-					Object.values(customFilds).filter(
-						x => !Object.keys(currentItem[0]).includes(x)
-					).length)
+				pageItems.filter(
+					item => parseInt(item.id) === parseInt(hash.id)
+				);
+			if (
+				!(currentItem && currentItem.length) ||
+				Object.values(customFilds).filter(
+					x => !Object.keys(currentItem[0]).includes(x)
+				).length
 			) {
 				dispatch(fetchPerson({ id: hash.id }));
 			} else {
