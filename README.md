@@ -8,12 +8,12 @@ A working demo can be found [here](https://bijanmoudi.github.io/pipebook).
 
 ## Features
 
--   Implementing the solution as a single page of a bigger project
--   Supporting common keyboard shortcuts (like `Escape` for closing a modal and `Enter` for submitting a form)
--   Following almost all the best practices of accessibility
--   Preventing extra requests wherever possible (like person information modal in `People's List` page)
--   Pixel-perfect and UX-aware UI development
--   Implementing all bonus challenges (like pagination, search, ordering, creating a new user, and deleting a user)
+- Implementing the solution as a single page of a bigger project
+- Supporting common keyboard shortcuts (like `Escape` for closing a modal and `Enter` for submitting a form)
+- Following almost all the best practices of accessibility
+- Preventing extra requests wherever possible (like person information modal in `People's List` page)
+- Pixel-perfect and UX-aware UI development
+- Implementing all bonus challenges (like pagination, search, ordering, creating a new user, and deleting a user)
 
 ## How to
 
@@ -51,22 +51,22 @@ A working demo can be found [here](https://bijanmoudi.github.io/pipebook).
 
 ## Confession
 
--   I am not a TDD expert but I would like to be
+- I am not a TDD expert but I would like to be
 
 ## Credits
 
--   [Pipedrive API](https://developers.pipedrive.com/docs/api/v1/#!/Persons)
--   [Create React App](https://github.com/facebook/create-react-app) starter kit
--   [react-router-dom](https://github.com/ReactTraining/react-router) for handling routing
--   [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux), [redux-thunk](https://github.com/reduxjs/redux-thunk) for handling global states
--   [prop-types](https://github.com/facebook/prop-types) for runtime type checking
--   [react-sortable-hoc](https://github.com/clauderic/react-sortable-hoc) and [array-move](https://github.com/sindresorhus/array-move) for supporting cross-platform drag & drop
--   [react-string-replace](https://github.com/iansinnott/react-string-replace) for highlighting search results
--   [path-to-regexp](https://github.com/pillarjs/path-to-regexp) for extracting URL parameters
--   [axios](https://github.com/axios/axios) for handling HTTP requests
--   [react-sticky](https://github.com/captivationsoftware/react-sticky) for high performance fixing of the elements in all platforms
--   [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) for handling Snapshot(regression) tests
--   [classnames](https://github.com/JedWatson/classnames) for handling conditional classes more elegantly
--   [node-sass](https://github.com/sass/node-sass) and [sass-mq](https://github.com/sass-mq/sass-mq) for making the styling as easy as a breath
--   [spa-github-pages](https://github.com/rafrex) for enabling the application to work from GitHub pages
--   Avatar images of unknown people (I hope they don't get sad because of using their photos without permission)
+- [Pipedrive API](https://developers.pipedrive.com/docs/api/v1/#!/Persons)
+- [Create React App](https://github.com/facebook/create-react-app) starter kit
+- [react-router-dom](https://github.com/ReactTraining/react-router) for handling routing
+- [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux), [redux-thunk](https://github.com/reduxjs/redux-thunk) for handling global states
+- [prop-types](https://github.com/facebook/prop-types) for runtime type checking
+- [react-sortable-hoc](https://github.com/clauderic/react-sortable-hoc) and [array-move](https://github.com/sindresorhus/array-move) for supporting cross-platform drag & drop
+- [react-string-replace](https://github.com/iansinnott/react-string-replace) for highlighting search results
+- [path-to-regexp](https://github.com/pillarjs/path-to-regexp) for extracting URL parameters
+- [axios](https://github.com/axios/axios) for handling HTTP requests
+- [react-sticky](https://github.com/captivationsoftware/react-sticky) for high performance fixing of the elements in all platforms
+- [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) for handling Snapshot(regression) tests
+- [classnames](https://github.com/JedWatson/classnames) for handling conditional classes more elegantly
+- [node-sass](https://github.com/sass/node-sass) and [sass-mq](https://github.com/sass-mq/sass-mq) for making the styling as easy as a breath
+- [spa-github-pages](https://github.com/rafrex/spa-github-pages) for enabling the application to work from GitHub pages
+- Avatar images of unknown people (I hope they don't get sad because of using their photos without permission)
