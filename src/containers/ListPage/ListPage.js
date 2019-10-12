@@ -115,7 +115,8 @@ const List = () => {
 						the prioritization precedure (with one update).
 					*/
 					priority:
-						(((performance.timing && performance.timing.navigationStart) ||
+						(((performance.timing &&
+							performance.timing.navigationStart) ||
 							Date.now()) +
 							performance.now()) *
 						1e3
@@ -167,8 +168,9 @@ const List = () => {
 				on it in the future if needed.
 			*/
 			const portion =
-				getMinimumDifference(pageItems.map(item => item.priority || 1)) /
-				state.listPeople.limit;
+				getMinimumDifference(
+					pageItems.map(item => item.priority || 1)
+				) / state.listPeople.limit;
 			const prioritizedItem = pageItems[oldIndex];
 			const newPriority =
 				(pageItems[newIndex].priority || 1) +
@@ -213,15 +215,17 @@ const List = () => {
 				but this is not true about search endpoint. So it is better to
 				check for the presence of details, before starting a new call.
 			*/
-			const currentItem = pageItems.filter(
-				item => parseInt(item.id) === parseInt(hash.id)
-			);
-			if (
+			const currentItem =
+				pageItems &&
 				pageItems.length &&
-				(!currentItem.length ||
-					Object.values(customFilds).filter(
-						x => !Object.keys(currentItem[0]).includes(x)
-					).length)
+				pageItems.filter(
+					item => parseInt(item.id) === parseInt(hash.id)
+				);
+			if (
+				!(currentItem && currentItem.length) ||
+				Object.values(customFilds).filter(
+					x => !Object.keys(currentItem[0]).includes(x)
+				).length
 			) {
 				dispatch(fetchPerson({ id: hash.id }));
 			} else {
@@ -237,7 +241,6 @@ const List = () => {
 				break;
 			case 'delete':
 				setModalContent(deletePersonModal);
-
 				break;
 			case 'view':
 				setModalContent(viewPersonModal);
@@ -337,7 +340,13 @@ const List = () => {
 						Object.keys(activePerson)
 							.filter(
 								item =>
-									!['id', 'priority', 'picture', 'phone', 'name'].includes(item)
+									![
+										'id',
+										'priority',
+										'picture',
+										'phone',
+										'name'
+									].includes(item)
 							)
 							.reduce((obj, key) => {
 								obj[key] = activePerson[key];
@@ -349,6 +358,8 @@ const List = () => {
 		)
 	};
 	const title = "People's List";
+	const pageTitle =
+		"People's List" + (term ? ` - Results for "${term}"` : '');
 	const titleExtra = (
 		<Button size="small" color="green">
 			<Link to="#/person/add/" title="Add a new person">
@@ -382,7 +393,9 @@ const List = () => {
 			currentPage={currentPage}
 			groupCount={state.listPeople.groupCount}
 			hasNextPage={state.listPeople.more_items_in_collection}
-			basePath={'/list/page/{page}' + ((term ? '/search/' + term : '') + '/')}
+			basePath={
+				'/list/page/{page}' + ((term ? '/search/' + term : '') + '/')
+			}
 			pathPageSelector="{page}"
 		/>
 	);
@@ -390,8 +403,8 @@ const List = () => {
 		<>
 			<p aria-live="polite" className="visuallyhidden">
 				{pageItems.length
-					? `Showing results ${pageStartIndex + 1} to ${pageStartIndex +
-							pageItems.length}`
+					? `Showing results ${pageStartIndex +
+							1} to ${pageStartIndex + pageItems.length}`
 					: 'No result found.'}
 			</p>
 			{pageItems.length ? (
@@ -424,12 +437,18 @@ const List = () => {
 			<Page
 				title={title}
 				titleExtra={titleExtra}
+				pageTitle={pageTitle}
 				search={search}
 				navigation={navigation}
 				pageContent={pageContent}
 			/>
 			{needsModal ? (
 				<Modal
+					pageTitle={
+						hash.action === 'view' &&
+						activePerson &&
+						activePerson.name
+					}
 					open={isModalOpen}
 					onClose={() => onModalClose()}
 					loading={
@@ -450,7 +469,8 @@ const List = () => {
 					type={state[state.lastAction].error ? 'error' : null}
 					hasLoading={true}
 					onClick={() =>
-						!state[state.lastAction].loading && setPromptVisible(false)
+						!state[state.lastAction].loading &&
+						setPromptVisible(false)
 					}
 				/>
 			) : null}

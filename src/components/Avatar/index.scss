@@ -48,11 +48,6 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
-		transition: opacity 250ms ease 500ms;
-	}
-	&--is-loading {
-		.avatar__image {
-			opacity: 0;
-		}
+		animation: fadeIn 500ms;
 	}
 }
