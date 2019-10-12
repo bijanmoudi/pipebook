@@ -45,10 +45,8 @@ const Avatar = ({
 				{...(link ? { href: link } : {})}
 				{...(link && !focusable ? { tabIndex: '-1' } : {})}
 			>
-				{abbr ? (
-					<abbr className="avatar__abbreviation">{abbr}</abbr>
-				) : null}
-				{url ? (
+				{abbr ? <abbr className="avatar__abbreviation">{abbr}</abbr> : null}
+				{url && loadedURL ? (
 					<div
 						role="img"
 						aria-label={`${name}'s Avatar`}
