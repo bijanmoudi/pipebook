@@ -8,6 +8,7 @@ const Content = React.lazy(() => import('../Content'));
 const Page = ({
 	title,
 	titleExtra,
+	pageTitle,
 	search,
 	navigation,
 	pageContent,
@@ -15,7 +16,7 @@ const Page = ({
 	...restProps
 }) => {
 	useEffect(() => {
-		document.title = `Pipebook — ${title}`;
+		document.title = `Pipebook — ${pageTitle ? pageTitle : title}`;
 	});
 	return (
 		<div

@@ -355,7 +355,9 @@ const List = () => {
 			</>
 		)
 	};
-	const title = "People's List" + (term ? ` - Results for "${term}"` : '');
+	const title = "People's List";
+	const pageTitle =
+		"People's List" + (term ? ` - Results for "${term}"` : '');
 	const titleExtra = (
 		<Button size="small" color="green">
 			<Link to="#/person/add/" title="Add a new person">
@@ -433,6 +435,7 @@ const List = () => {
 			<Page
 				title={title}
 				titleExtra={titleExtra}
+				pageTitle={pageTitle}
 				search={search}
 				navigation={navigation}
 				pageContent={pageContent}
