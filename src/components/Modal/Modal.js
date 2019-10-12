@@ -10,6 +10,7 @@ const Modal = ({
 	label,
 	title,
 	content,
+	pageTitle,
 	hasCloseButton,
 	closeButtonContent,
 	closeButtonTitle,
@@ -29,12 +30,18 @@ const Modal = ({
 	};
 	const handleClose = () => {
 		setOpen(false);
+		document.title.replace(` - ${pageTitle}`, '');
 		onClose();
 	};
 	useEffect(() => {
-		onOpen();
+		if (isOpen && !loading) {
+			setTimeout(
+				() => (document.title += pageTitle ? ` - ${pageTitle}` : '')
+			);
+			onOpen();
+		}
 		// eslint-disable-next-line
-	}, []);
+	}, [isOpen, loading]);
 	// eslint-disable-next-line
 	useEffect(() => {
 		const previousActiveElement = document.activeElement;
@@ -69,7 +76,11 @@ const Modal = ({
 			{...restProps}
 		>
 			{label || title ? (
-				<span id={`${id}__label`} className="visuallyhidden" aria-live="polite">
+				<span
+					id={`${id}__label`}
+					className="visuallyhidden"
+					aria-live="polite"
+				>
 					{label || title}
 				</span>
 			) : null}
@@ -95,13 +106,18 @@ const Modal = ({
 						{hasCloseButton ? (
 							<Button>
 								<button
-									title={closeButtonTitle || 'Back to the list'}
+									title={
+										closeButtonTitle || 'Back to the list'
+									}
 									onClick={handleClose}
 								>
 									{closeButtonContent || (
 										<>
 											Back
-											<span className="visuallyhidden"> to the list</span>
+											<span className="visuallyhidden">
+												{' '}
+												to the list
+											</span>
 										</>
 									)}
 								</button>
@@ -119,6 +135,7 @@ Modal.propTypes = {
 	label: PropTypes.oneOfType([() => null, PropTypes.string]),
 	title: PropTypes.oneOfType([() => null, PropTypes.string]),
 	content: PropTypes.oneOfType([() => null, PropTypes.string]),
+	pageTitle: PropTypes.oneOfType([() => null, PropTypes.string]),
 	hasCloseButton: PropTypes.bool,
 	closeButtonContent: PropTypes.oneOfType([() => null, PropTypes.element]),
 	closeButtonTitle: PropTypes.oneOfType([() => null, PropTypes.string]),
@@ -135,6 +152,7 @@ Modal.defaultProps = {
 	label: null,
 	title: null,
 	content: null,
+	pageTitle: null,
 	hasCloseButton: true,
 	closeButtonContent: null,
 	closeButtonTitle: null,
