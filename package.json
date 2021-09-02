@@ -5,7 +5,7 @@
 	"homepage": "https://bijanmoudi.github.io/pipebook",
 	"dependencies": {
 		"array-move": "^2.1.0",
-		"axios": "^0.19.0",
+		"axios": "^0.21.1",
 		"classnames": "^2.2.6",
 		"css-reset-and-normalize": "^2.1.0",
 		"node-sass": "^4.12.0",
